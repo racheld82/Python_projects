@@ -107,22 +107,3 @@ def make_move(s, m):  ##
         ns[c[1]] = s[c[0]]
     return ns
 
-"""
-example:
-
-result when hdistance returned 0:
-[['B', 'R', 'G', 'G', 'G', 'O', 'W', 'R', 'O', 'Y', 'B', 'W', 'Y', 'B', 'R', 'G', 'O', 'Y', 'Y', 'W', 'W', 'B', 'R', 'O'], '']
-[['R', 'R', 'R', 'R', 'G', 'G', 'B', 'B', 'Y', 'Y', 'G', 'G', 'B', 'B', 'Y', 'Y', 'W', 'W', 'W', 'W', 'O', 'O', 'O', 'O'], '3021214']
-inserts:  383387
-removes:  76678
-
-result after changing hdistance to return an admissible heuristic:
-[['B', 'R', 'G', 'G', 'G', 'O', 'W', 'R', 'O', 'Y', 'B', 'W', 'Y', 'B', 'R', 'G', 'O', 'Y', 'Y', 'W', 'W', 'B', 'R', 'O'], '']
-[['R', 'R', 'R', 'R', 'G', 'G', 'B', 'B', 'Y', 'Y', 'G', 'G', 'B', 'B', 'Y', 'Y', 'W', 'W', 'W', 'W', 'O', 'O', 'O', 'O'], '3021214']
-inserts:  11622
-removes:  2325
-
-As we can see, the nubmer of inserts and removes was much lower when using the improved hdistance
-(documentation concerning the heuristic is in the hdistance function)
-"""
-
