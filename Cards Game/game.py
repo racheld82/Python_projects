@@ -1,28 +1,10 @@
-'''
-דיסין רחל 325849982
-לאופר דבורה 214348328
-'''
+
 import copy
 
 VIC = 10 ** 20  # The value of a winning board (for max)
 LOSS = -VIC  # The value of a losing board (for max)
 
 SIZE = 4  # The board is SIZE X SIZE
-'''
-תשובה לשאלה :1
-כאשר הלוח בגודל 2X2 השחקן השני יכול להבטיח לעצמו ניצחון בכל מצב:
-במידה והשחקן הראשון בחר להרים קלף אחד בלבד, השחקן השני ירים את הקלף האלכסוני לו,
- וכך יכריח את השחקן הראשון בתורו לקחת רק קלף אחד ולהשאיר לו את הקלף האחרון:
- a + "
- b " +
-  1  2
-במידה והשחקן הראשון בחר לקחת שני קלפים רצופים, השחקן השני לוקח את שני הכרטיסים הנותרים:
-a + +
-b # #
-  1  2
-(או לכל כיוון אחר)
-'''
-
 '''
 The state of the game is represented by a list of 2 items:
 0. The game board - a matrix (list of lists) of strings. 
