@@ -2,9 +2,9 @@
 import copy
 
 VIC = 10 ** 20  # The value of a winning board (for max)
-LOSS = -VIC  # The value of a losing board (for max)
+LOSS = -VIC  
 
-SIZE = 4  # The board is SIZE X SIZE
+SIZE = 4  
 '''
 The state of the game is represented by a list of 2 items:
 0. The game board - a matrix (list of lists) of strings. 
